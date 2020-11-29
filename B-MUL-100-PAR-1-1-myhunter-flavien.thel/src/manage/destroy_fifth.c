@@ -19,4 +19,4 @@ void destroy_fifth(sfRenderWindow* win, global *glo, fifth *fi)
     sfSprite_destroy(fi->dracaufeu);
     sfSprite_destroy(fi->ohoh);
     sfRenderWindow_close(win);
-} 
+}

@@ -12,15 +12,15 @@
 
 void move_ohoh(sprites *sp, global *glo, fifth *fi)
 {
-     sfSprite_move(fi->ohoh, (sfVector2f){sp->vitesse_1 * -1, sp->x});
-     if (sfSprite_getPosition(fi->ohoh).x > 1980 ||
-         sfSprite_getPosition(fi->ohoh).y < -80 ||
-         sfSprite_getPosition(fi->ohoh).y > 1160) {
-          sp->y = (rand() % 739);
-          sp->x = random_float(sp->x, 0.3);
-          glo->vie -= 1;
-          sfSprite_setPosition(fi->ohoh, (sfVector2f){-80, sp->y});
-     }
+    sfSprite_move(fi->ohoh, (sfVector2f){sp->vitesse_1 * -1, sp->x});
+    if (sfSprite_getPosition(fi->ohoh).x > 1980 ||
+        sfSprite_getPosition(fi->ohoh).y < -80 ||
+        sfSprite_getPosition(fi->ohoh).y > 1160) {
+        sp->y = (rand() % 739);
+        sp->x = random_float(sp->x, 0.3);
+        glo->vie -= 1;
+        sfSprite_setPosition(fi->ohoh, (sfVector2f){-80, sp->y});
+    }
 }
 
 void move_gold_2(sprites *sp, fifth *fi)

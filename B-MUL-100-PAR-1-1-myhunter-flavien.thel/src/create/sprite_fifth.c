@@ -1,4 +1,3 @@
-
 /*
 ** EPITECH PROJECT, 2020
 ** sprite_fifth
@@ -45,7 +44,7 @@ sfSprite *red_2(sfSprite *red, fifth *fi)
     sfSprite_setTextureRect(red, fi->rect_r);
     sfSprite_setPosition(red, (sfVector2f){2000, 850});
     return (red);
-} 
+}
 
 sfSprite *gold_2(sfSprite *gold, fifth *fi)
 {

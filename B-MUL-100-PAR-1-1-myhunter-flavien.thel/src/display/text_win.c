@@ -32,5 +32,5 @@ void text_win(sfRenderWindow* window, global *glo)
     sfText_setFont(text, font);
     sfText_setString(text, getstr(glo->score));
     sfText_setPosition(text, pos);
-    sfRenderWindow_drawText(window, text, NULL); 
+    sfRenderWindow_drawText(window, text, NULL);
 }

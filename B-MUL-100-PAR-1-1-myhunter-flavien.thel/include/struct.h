@@ -97,7 +97,7 @@ struct fifth
     sfClock *clock_r;
     sfClock *clock_g;
     sfClock *clock_d;
-    sfClock *clock_o; 
+    sfClock *clock_o;
 };
 
 #endif

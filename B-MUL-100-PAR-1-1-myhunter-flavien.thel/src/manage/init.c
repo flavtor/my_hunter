@@ -29,6 +29,7 @@ void fifth_init(sprites *sp, global *glo, fifth *fi)
     sp->acc_2 = -0.5;
     sfMusic_play(fi->music_5);
 }
+
 void fourth_init(sprites *sp, global *glo, fourth *fo)
 {
     fo->music_4 = sfMusic_createFromFile("music/4.ogg");
@@ -103,4 +104,3 @@ void first_init(sprites *sp, global *glo)
     sp->level = 1;
     sfMusic_play(glo->music);
 }
-
