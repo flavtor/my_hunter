@@ -17,7 +17,16 @@ CSFML   =       -lcsfml-graphics -lcsfml-window -lcsfml-system -lcsfml-audio
 
 CREATE	=	./src/create/
 
-SRC	=	$(CREATE)clock.c		\
+DISPLAY	=	./src/display/
+
+MANAGE	=	./src/manage/
+
+SPRITES	=	./src/sprites/
+
+WINDOW	=	./src/window/
+
+SRC	=	main.c				\
+		$(CREATE)clock.c		\
 		$(CREATE)clock_2.c		\
 		$(CREATE)clock_fifth.c		\
 		$(CREATE)sprite_fifth.c		\
@@ -25,35 +34,34 @@ SRC	=	$(CREATE)clock.c		\
 		$(CREATE)sprite_fourth.c	\
 		$(CREATE)sprite_second.c	\
 		$(CREATE)sprite_third.c		\
-		main.c			\
-		destroy.c		\
-		display_window.c 	\
-		init_menu.c		\
-		menu.c			\
-		menu_event.c		\
-		display.c		\
-		first.c			\
-		init.c			\
-		move_first.c		\
-		target_gestion.c	\
-		text_gestion.c		\
-		life.c			\
-		game_over.c		\
-		redirection.c 		\
-		move_second.c		\
-		second.c		\
-		rand_float.c		\
-		text_level.c		\
-		move_third.c		\
-		third.c			\
-		fourth.c		\
-		move_fourth.c		\
-		destroy_fifth.c		\
-		display_fifth.c		\
-		fifth.c			\
-		move_fifth.c		\
-		win.c			\
-		text_win.c 
+		$(DISPLAY)display.c		\
+		$(DISPLAY)display_fifth.c	\
+		$(DISPLAY)display_window.c	\
+		$(DISPLAY)text_gestion.c	\
+		$(DISPLAY)text_level.c		\
+		$(DISPLAY)text_win.c		\
+		$(MANAGE)destroy.c		\
+		$(MANAGE)destroy_fifth.c	\
+		$(MANAGE)init.c			\
+		$(MANAGE)init_menu.c		\
+		$(MANAGE)rand_float.c		\
+		$(SPRITES)menu_event.c		\
+		$(SPRITES)move_first.c		\
+		$(SPRITES)move_fourth.c		\
+		$(SPRITES)move_second.c		\
+		$(SPRITES)move_third.c		\
+		$(SPRITES)target_gestion.c	\
+		$(SPRITES)move_fifth.c		\
+		$(WINDOW)menu.c			\
+		$(WINDOW)first.c		\
+		$(WINDOW)life.c			\
+		$(WINDOW)game_over.c		\
+		$(WINDOW)redirection.c 		\
+		$(WINDOW)second.c		\
+		$(WINDOW)third.c		\
+		$(WINDOW)fourth.c		\
+		$(WINDOW)fifth.c		\
+		$(WINDOW)win.c
 
 OBJ	=	$(SRC:.c=.o)
 
