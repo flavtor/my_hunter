@@ -43,11 +43,12 @@ void destroy_first(sfRenderWindow* window, global *glo, sprites *sp)
     sfRenderWindow_close(window);
 }
 
-void destroy_menu(sfRenderWindow* window, global *glo)
+void destroy_menu(sfRenderWindow* window, global *glo, sfSprite *how)
 {
     sfMusic_destroy(glo->menu_music);
     sfSprite_destroy(glo->sprite_play);
     sfSprite_destroy(glo->sprite_exit);
     sfSprite_destroy(glo->poke);
+    sfSprite_destroy(how);
     sfRenderWindow_close(window);
 }

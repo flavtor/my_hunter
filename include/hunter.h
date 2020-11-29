@@ -19,6 +19,7 @@
 
 //MANAGE
 
+void manage_menu(sfRenderWindow *window, sfSprite *how, global *glo);
 void bonus(global *glo);
 void redirection_4(sfRenderWindow *win, global *glo, sprites *sp, fourth *fo);
 void redirection_3(sfRenderWindow *win, global *glo, sprites *sp, third *th);
@@ -36,7 +37,7 @@ void destroy_fourth(sfRenderWindow* win, fourth *fo);
 void destroy_third(sfRenderWindow* win, third *th);
 void destroy_second(sfRenderWindow* window, sprites *sp);
 void destroy_over(sfSprite over, sfMusic o_music, sfRenderWindow *win);
-void destroy_menu(sfRenderWindow* window, global *glo);
+void destroy_menu(sfRenderWindow* window, global *glo, sfSprite *how);
 void destroy_first(sfRenderWindow* window, global *glo, sprites *sp);
 
 //INITIALIZATION
@@ -57,6 +58,7 @@ sfMusic *menu_music(void);
 
 //AFFICHAGE
 
+void text_d(sfRenderWindow *window);
 void text_dev(sfRenderWindow* window);
 void win_text(sfRenderWindow* window);
 void text_win(sfRenderWindow* window, global *glo);

@@ -45,6 +45,7 @@ SRC	=	main.c				\
 		$(MANAGE)init.c			\
 		$(MANAGE)init_menu.c		\
 		$(MANAGE)rand_float.c		\
+		$(MANAGE)menu_mange.c		\
 		$(SPRITES)menu_event.c		\
 		$(SPRITES)move_first.c		\
 		$(SPRITES)move_fourth.c		\

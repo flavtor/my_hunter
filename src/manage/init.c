@@ -43,8 +43,8 @@ void fourth_init(sprites *sp, global *glo, fourth *fo)
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
     sp->v_pause2 = -1;
-    sp->acc_1 = -0.5;
-    sp->acc_2 = -0.5;
+    sp->acc_1 = -0.7;
+    sp->acc_2 = -0.7;
     sfMusic_play(fo->music_4);
 }
 
@@ -60,8 +60,8 @@ void third_init(sprites *sp, global *glo, third *th)
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
     sp->v_pause2 = -1;
-    sp->acc_1 = -0.5;
-    sp->acc_2 = -0.4;
+    sp->acc_1 = -0.4;
+    sp->acc_2 = -0.3;
     sfMusic_play(th->music_3);
 }
 
@@ -77,8 +77,8 @@ void second_init(sprites *sp, global *glo)
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
     sp->v_pause2 = -1;
-    sp->acc_1 = -0.4;
-    sp->acc_2 = -0.3;
+    sp->acc_1 = -0.5;
+    sp->acc_2 = -0.4;
     sfMusic_play(sp->music_2);
 }
 
@@ -91,8 +91,8 @@ void first_init(sprites *sp, global *glo)
     sp->red = red(sp->red, glo);
     glo->clock_d = sfClock_create();
     glo->clock_r = sfClock_create();
-    glo->score = 211;
-    glo->vie = 1;
+    glo->score = 0;
+    glo->vie = 5;
     sp->vitesse_1 = -1;
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
