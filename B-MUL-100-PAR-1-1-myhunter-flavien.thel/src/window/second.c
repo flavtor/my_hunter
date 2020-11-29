@@ -34,7 +34,7 @@ void manage_second(sfRenderWindow *w, sprites *sp)
             sp->vitesse_1 = 0;
             sp->vitesse_2 = 0;
         }
-        if (sfKeyboard_isKeyPressed(sfKeyX)) {
+        if (sfKeyboard_isKeyPressed(sfKeyEnter)) {
             sp->x = random_float(sp->x, 0.3);
             sp->vitesse_1 = sp->v_pause1;
             sp->vitesse_2 = sp->v_pause2;

@@ -50,12 +50,14 @@ void menu_init(global *glo);
 
 //MUSIC
 
+sfMusic *how_music(void);
 sfMusic *win_music(void);
 sfMusic *over_music(void);
 sfMusic *menu_music(void);
 
 //AFFICHAGE
 
+void text_dev(sfRenderWindow* window);
 void win_text(sfRenderWindow* window);
 void text_win(sfRenderWindow* window, global *glo);
 sfSprite *display_win(void);
@@ -70,10 +72,11 @@ void text_over(sfRenderWindow* window, global *glo);
 void text_score(sfRenderWindow* window, global *glo, sprites *sp);
 void display_first(sfRenderWindow *window, sprites *sp, global *glo);
 void display_window(sfRenderWindow *window, global *glo, sfMusic *music);
-void button_loop(sfRenderWindow* window, global *glo);
+void button_loop(sfRenderWindow* window, global *glo, sfSprite *how);
 
 //SPRITE GESTION
 
+void event_how(sfRenderWindow *win, sfEvent event, sfSprite *spr, global *glo);
 void life_final(global *glo, sfRenderWindow *window, sfMusic *m);
 void move_fifth(sprites *sp, global *glo, fifth *fi);
 void move_red_2(sprites *sp, fifth *fi);
@@ -105,6 +108,8 @@ void move_first(sprites *sp, global *glo);
 
 //CREATE SPRITE
 
+sfSprite *how_button(void);
+sfSprite *how_back(void);
 sfSprite *red_2(sfSprite *red, fifth *fi);
 sfSprite *dracaufeu_2(sfSprite *dracaufeu, fifth *fi, sprites *sp);
 sfSprite *ohoh(sfSprite *ohoh, fifth *fi, sprites *sp);
@@ -148,6 +153,7 @@ sfIntRect clock_red(sfClock *clock_r, global *glo, sprites *sp);
 
 //MAIN FONCTION
 
+void how(sfRenderWindow* win);
 void win(global *glo, sfRenderWindow *win);
 void fifth_stage(sfRenderWindow* window, global *glo, sprites *sp);
 void fourth_stage(sfRenderWindow* window, global *glo, sprites *sp);

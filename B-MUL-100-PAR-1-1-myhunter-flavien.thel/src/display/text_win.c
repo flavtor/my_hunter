@@ -9,6 +9,19 @@
 #include "hunter.h"
 #include "struct.h"
 
+void text_dev(sfRenderWindow* window)
+{
+    sfFont *font;
+    sfText *text = sfText_create();
+    sfVector2f pos = {394, 554};
+
+    font = sfFont_createFromFile("DejaVuSans-Bold.ttf");
+    sfText_setFont(text, font);
+    sfText_setString(text, "score du dev : 296");
+    sfText_setPosition(text, pos);
+    sfRenderWindow_drawText(window, text, NULL);
+}
+
 void win_text(sfRenderWindow* window)
 {
     sfFont *font;

@@ -61,7 +61,8 @@ SRC	=	main.c				\
 		$(WINDOW)third.c		\
 		$(WINDOW)fourth.c		\
 		$(WINDOW)fifth.c		\
-		$(WINDOW)win.c
+		$(WINDOW)win.c			\
+		$(WINDOW)how.c
 
 OBJ	=	$(SRC:.c=.o)
 

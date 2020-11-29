@@ -45,6 +45,7 @@ void win(global *glo, sfRenderWindow *win)
         sfRenderWindow_drawSprite(win, winn, NULL);
         text_win(win, glo);
         win_text(win);
+        text_dev(win);
         while (sfRenderWindow_pollEvent(win, &ev)) {
             if (ev.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeySpace))
                 sfRenderWindow_close(win);

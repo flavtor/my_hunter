@@ -69,18 +69,20 @@ void launch_menu(sfRenderWindow *window)
     sfEvent ev;
     sfIntRect rect = {0, 0, 64, 63};
     sfClock *clock_p = sfClock_create();
+    sfSprite *how = how_button();
 
     menu_init(glo);
     while (sfRenderWindow_isOpen(window)){
         display_window(window, glo, glo->menu_music);
         display_poke(window, glo);
-        button_loop(window, glo);
+        button_loop(window, glo, how);
         rect = clock_poke(clock_p, glo, rect);
         while (sfRenderWindow_pollEvent(window, &ev)) {
             if (ev.type == sfEvtClosed || sfKeyboard_isKeyPressed(sfKeySpace))
                 sfRenderWindow_close(window);
             event_play(window, ev, glo);
             event_quit(window, ev, glo);
+            event_how(window, ev, how, glo);
         }
     }
     destroy_menu(window, glo);

@@ -91,8 +91,8 @@ void first_init(sprites *sp, global *glo)
     sp->red = red(sp->red, glo);
     glo->clock_d = sfClock_create();
     glo->clock_r = sfClock_create();
-    glo->score = 0;
-    glo->vie = 5;
+    glo->score = 211;
+    glo->vie = 1;
     sp->vitesse_1 = -1;
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
