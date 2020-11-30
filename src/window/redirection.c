@@ -11,13 +11,13 @@
 
 void bonus(global *glo)
 {
-    if (glo->score == 260)
+    if (glo->score == 240)
         glo->spriteback = create_sprite_fifth(1);
-    if (glo->score == 290)
+    if (glo->score == 270)
         glo->spriteback = create_sprite_fifth(2);
-    if (glo->score == 350)
+    if (glo->score == 300)
         glo->spriteback = create_sprite_fifth(3);
-    if (glo->score == 380)
+    if (glo->score == 310)
         glo->spriteback = create_sprite_fifth(4);
 }
 

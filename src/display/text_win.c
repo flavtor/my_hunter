@@ -17,7 +17,7 @@ void text_dev(sfRenderWindow* window)
 
     font = sfFont_createFromFile("DejaVuSans-Bold.ttf");
     sfText_setFont(text, font);
-    sfText_setString(text, "score du dev : 296");
+    sfText_setString(text, "score du dev : 308");
     sfText_setPosition(text, pos);
     sfRenderWindow_drawText(window, text, NULL);
 }

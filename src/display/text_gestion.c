@@ -43,6 +43,8 @@ void score(sfRenderWindow* window)
     sfText_setString(text, "score :");
     sfText_setPosition(text, pos);
     sfRenderWindow_drawText(window, text, NULL);
+    sfFont_destroy(font);
+    sfText_destroy(text);
 }
 
 void text_score(sfRenderWindow* window, global *glo, sprites *sp)
@@ -57,6 +59,8 @@ void text_score(sfRenderWindow* window, global *glo, sprites *sp)
     sfText_setString(text, getstr(glo->score));
     sfText_setPosition(text, pos);
     sfRenderWindow_drawText(window, text, NULL);
+    sfFont_destroy(font);
+    sfText_destroy(text);
 }
 
 void text_d(sfRenderWindow *window)
@@ -67,7 +71,7 @@ void text_d(sfRenderWindow *window)
 
     font = sfFont_createFromFile("DejaVuSans-Bold.ttf");
     sfText_setFont(text, font);
-    sfText_setString(text, "score dev : 296");
+    sfText_setString(text, "score dev : 308");
     sfText_setPosition(text, pos);
     sfRenderWindow_drawText(window, text, NULL);
 }

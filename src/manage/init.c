@@ -25,8 +25,8 @@ void fifth_init(sprites *sp, global *glo, fifth *fi)
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
     sp->v_pause2 = -1;
-    sp->acc_1 = -0.5;
-    sp->acc_2 = -0.5;
+    sp->acc_1 = -0.2;
+    sp->acc_2 = -0.2;
     sfMusic_play(fi->music_5);
 }
 
@@ -43,8 +43,8 @@ void fourth_init(sprites *sp, global *glo, fourth *fo)
     sp->vitesse_2 = -1;
     sp->v_pause1 = -1;
     sp->v_pause2 = -1;
-    sp->acc_1 = -0.7;
-    sp->acc_2 = -0.7;
+    sp->acc_1 = -0.3;
+    sp->acc_2 = -0.2;
     sfMusic_play(fo->music_4);
 }
 
